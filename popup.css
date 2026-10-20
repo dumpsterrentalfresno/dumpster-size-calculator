@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { width: 360px; margin: 0; font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; color: #1a1a1a; background: #fff; }
+main { padding: 16px; }
+h1 { font-size: 19px; line-height: 1.25; margin: 0 0 4px; }
+.sub { color: #555; margin: 0 0 14px; font-size: 13px; }
+label { display: block; font-weight: 700; margin: 12px 0 4px; }
+select { width: 100%; padding: 8px; border: 1px solid #bbb; border-radius: 6px; font: inherit; background: #fff; }
+button { width: 100%; margin-top: 16px; padding: 10px; border: 0; border-radius: 6px; background: #166534; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+button:hover { background: #14532d; }
+.result { margin-top: 16px; padding: 14px; border: 1px solid #d9e8dd; border-radius: 8px; background: #f4f9f5; }
+.eyebrow { margin: 0; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #166534; }
+.result h2 { margin: 2px 0; font-size: 22px; }
+.dims { margin: 0 0 6px; font-weight: 600; }
+.why { color: #444; font-size: 13px; }
+.notes p { margin: 8px 0 0; font-size: 13px; }
+.runnerup { margin: 10px 0 0; font-size: 13px; color: #444; }
+footer { margin-top: 16px; border-top: 1px solid #eee; padding-top: 10px; }
+.privacy { margin: 0 0 6px; font-size: 12px; color: #666; }
+.links { margin: 0; font-size: 13px; }
+.links a { color: #166534; }

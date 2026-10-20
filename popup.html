@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dumpster Size Calculator</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Dumpster Size Calculator</h1>
+    <p class="sub">Answer 4 questions. Get the right size — no guesswork, no second rental.</p>
+  </header>
+
+  <form id="calc" novalidate>
+    <label for="project">1. What kind of project?</label>
+    <select id="project" name="project">
+      <option value="small-cleanout">Small cleanout / decluttering</option>
+      <option value="garage-cleanout">Garage / basement / estate cleanout</option>
+      <option value="single-room">Single-room remodel</option>
+      <option value="kitchen-bath">Kitchen / bathroom remodel</option>
+      <option value="multi-room">Multi-room renovation</option>
+      <option value="roofing">Roofing tear-off</option>
+      <option value="moving">Moving / big clear-out</option>
+      <option value="yard">Yard / landscaping debris</option>
+      <option value="whole-house">Whole-house cleanout</option>
+      <option value="construction">Construction / large renovation</option>
+      <option value="demolition">Demolition / commercial</option>
+    </select>
+
+    <label for="loads">2. How much debris? (pickup-truck loads)</label>
+    <select id="loads" name="loads">
+      <option value="2">1–2 loads — a few bags / one small pile</option>
+      <option value="4" selected>3–5 loads — a room or two</option>
+      <option value="8">6–9 loads — several rooms / big garage</option>
+      <option value="12">10+ loads — whole house / jobsite</option>
+    </select>
+
+    <label for="material">3. What kind of material?</label>
+    <select id="material" name="material">
+      <option value="light">Light &amp; bulky — furniture, household junk, yard debris</option>
+      <option value="mixed">Mixed — wood, drywall, flooring, general debris</option>
+      <option value="heavy">Heavy — concrete, dirt, brick, roofing shingles</option>
+    </select>
+
+    <label for="access">4. Where will it sit?</label>
+    <select id="access" name="access">
+      <option value="standard">Standard driveway / open space</option>
+      <option value="tight">Tight driveway / gated community / HOA</option>
+    </select>
+
+    <button type="submit">Find my size →</button>
+  </form>
+
+  <section id="result" class="result" aria-live="polite" hidden>
+    <p class="eyebrow">Recommended size</p>
+    <h2 id="result-size"></h2>
+    <p id="result-dims" class="dims"></p>
+    <p id="result-bestfor"></p>
+    <p id="result-why" class="why"></p>
+    <div id="result-notes" class="notes"></div>
+    <p id="result-runnerup" class="runnerup"></p>
+  </section>
+
+  <footer>
+    <p class="privacy">Runs 100% locally in your browser. Nothing you enter is sent or stored anywhere.</p>
+    <p class="links">
+      <a href="https://dumpsterrentalsfresno.com/dumpster-sizes-fresno/" target="_blank" rel="noopener">Full size guide ↗</a>
+      <span aria-hidden="true">·</span>
+      <a href="tel:+15597298023">Call (559) 729-8023 to book in Fresno</a>
+    </p>
+  </footer>
+</main>
+<script src="popup.js"></script>
+</body>
+</html>
